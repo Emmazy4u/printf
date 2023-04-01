@@ -2,21 +2,22 @@
 
 /************************* WRITE HANDLE *************************/
 /**
- * handle_write_char - Would Print a string
- * @c: char types.
- * @buffer: Buffer array to handle print
+ * handle_write_char - Prints a string
+ * @c: the char types.
+ * @buffer: a Buffer array to handle print
  * @flags:  Calculates active flags.
- * @width: get width.
+ * @width: gets width.
  * @precision: precision specifier
  * @size: Size specifier
  *
- * Return: Number of chars printed.
+ * Return: The number of chars printed.
  */
 int handle_write_char(char c, char buffer[],
 	int flags, int width, int precision, int size)
 { /* char is stored at left and paddind at buffer's right */
 	int i = 0;
 	char padd = ' ';
+	
 
 	UNUSED(precision);
 	UNUSED(size);
@@ -46,7 +47,7 @@ int handle_write_char(char c, char buffer[],
 
 /************************* WRITE NUMBER *************************/
 /**
- * write_number - Prints a string
+ * write_number - This prints a string
  * @is_negative: Lista of arguments
  * @ind: char types.
  * @buffer: Buffer array to handle print
@@ -55,7 +56,7 @@ int handle_write_char(char c, char buffer[],
  * @precision: precision specifier
  * @size: Size specifier
  *
- * Return: Number of chars printed.
+ * Return: the number of chars printed.
  */
 int write_number(int is_negative, int ind, char buffer[],
 	int flags, int width, int precision, int size)
@@ -79,8 +80,8 @@ int write_number(int is_negative, int ind, char buffer[],
 }
 
 /**
- * write_num - Write a number using a bufffer
- * @ind: Index at which the number starts on the buffer
+ * write_num - Writes a number using a bufffer
+ * @ind: Index at which of the number starts on the buffer
  * @buffer: Buffer
  * @flags: Flags
  * @width: width
@@ -139,7 +140,7 @@ int write_num(int ind, char buffer[],
 
 /**
  * write_unsgnd - Writes an unsigned number
- * @is_negative: Number indicating if the num is negative
+ * @is_negative: The number indicating if the num is negative
  * @ind: Index at which the number starts in the buffer
  * @buffer: Array of chars
  * @flags: Flags specifiers
